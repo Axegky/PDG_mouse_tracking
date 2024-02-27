@@ -1,0 +1,217 @@
+{
+ "styles":[
+	{
+		"name":"defaults",
+		"mainClass":["w3-white", "w3-center","w3-padding-small"],
+		"txtClass":["w3-light-grey"],
+		"boxClass":["w3-grey"],
+		"labelClass":["w3-white"],
+		"btnClass":["w3-button", "w3-block", "w3-border", "w3-border-gray", "w3-round-xlarge", "w3-display-middle"],
+		"btnTxt": ["w3-white"],
+		"btnSel":["w3-blue", "w3-hover-blue"],
+		"btnNotSel":["w3-light-blue"]
+	},
+	{
+	   "name":"A",
+	   "mainClass":"default",
+	   "txtClass":"default",
+	   "boxClass":"default",
+	   "boxType":"closed"
+	},
+
+	{
+		"name":"label",
+		"width":"8%",
+		"labelClass":"default",
+	    "height":"50px"
+	}
+	,
+	{
+		"name":"button",
+		"btnClass":"default",
+		"btnTxt": "default",
+		"btnSel":"default",
+		"btnNotSel":"default",
+		"height": "30px",
+		"width":"8%"
+	}
+ ]
+,
+ "opt":[
+	{
+	   "name":"A",
+	   "label":"You: Ally",
+	   "width":"28%"
+	}
+	,
+	{
+		"name":"B",
+		"label":"You: Betray",
+	   "width":"28%"
+	}
+
+]
+ ,
+"attr":[
+	{
+		"name":"CA",
+		"label":"Counterparty: Ally",
+	   	"height":"100px"
+	}
+	,
+	{
+		"name":"CB",
+		"label":"Counterparty: Betray",
+	   	"height":"100px"
+	}
+
+]
+,
+"cell":
+	[
+
+		{"A":[{"var":"AA",
+			 "txt":"-- You: 3 -- Counterparty: 3",
+			 "box":"You: Ally Counterparty: Ally",
+			 "pwidth":"1",
+			 "pheight":"1",
+			 "style":"A"
+			 }]
+
+		,
+		"B":[{"var":"BA",
+			 "txt":"-- You: 4 -- Counterparty: 1",
+			 "box":"You: Betray Counterparty: Ally",
+			 "pwidth":"1",
+			 "pheight":"1",
+			 "style":"A"
+			 }]
+
+		},
+		{"A":[{"var":"AB",
+			 "txt":"-- You: 1 -- Counterparty: 4",
+			 "box":"You: Ally Counterparty: Betray",
+			 "pwidth":"1",
+			 "pheight":"1",
+			 "style":"A"
+			 }]
+
+		,
+		"B":[{"var":"BB",
+			 "txt":"-- You: 2 -- Counterparty: 2",
+			 "box":"You: Betray Counterparty: Betray",
+			 "pwidth":"1",
+			 "pheight":"1",
+			 "style":"A"
+			 }]
+
+		},
+		{"A":[{"var":"A_o3",
+			 "txt":"1000 euro",
+			 "box":"A outcome 3",
+			 "pwidth":".50",
+			 "pheight":"1",
+			 "style":"A"
+			 }]
+
+		,
+		"B":[{"var":"B_o3",
+			 "txt":"500 euro",
+			 "box":"B outcome 3",
+			 "pwidth":".50",
+			 "pheight":"1",
+			 "style":"A"
+			 }]
+
+		}
+
+	]
+,
+ "delay":
+	{
+	"var" : [
+					"AA",
+					"BA",
+					"A_o3",
+					"A_p1",
+					"A_p2",
+					"A_p3",
+					"AB",
+					"BB",
+					"B_o3",
+					"B_p1",
+					"B_p2",
+					"B_p3"
+				],
+	"delays" : [
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0],
+				[0, 0, 0, 0, 0, 0, 0, 0]
+		]
+
+	}
+,
+ "optOrders":[
+	{
+	   "name":"order1",
+	   "opt":[
+		  "A",
+		  "B"
+	   ],
+	   "fixedOptLabels": ["gamble X","gamble Y"],
+	   "attr": "standard"
+	}
+ ]
+,
+ "sets":[
+	{
+	   "name":"dynSet",
+	   "optOrder":[
+			 "order1",
+			 "order1"
+	   ],
+	   "layout":"optionCol",
+	   "buttons":"on",
+	   "displayLabels":"all",
+	   "addedVars":[
+		  "test=2"
+	   ]
+	},
+	{
+	   "name":"dynSet2",
+	   "optOrder":[
+			 "order1",
+			 "order1"
+	   ],
+	   "layout":"attributeCol",
+	   "buttons":"on",
+	   "displayLabels":"all",
+	   "addedVars":[
+		  "test=2"
+	   ]
+	},
+	{
+	   "name":"dynSet3",
+	   "optOrder":[
+			 "order1",
+			 "order1"
+	   ],
+	   "layout":"optionCol",
+	   "buttons":"on",
+	   "displayLabels":"all",
+	   "fixedOptLabels":"on",
+	   "addedVars":[
+		  "test=2"
+	   ]
+	}
+ ]
+}

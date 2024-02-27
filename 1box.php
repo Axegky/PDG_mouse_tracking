@@ -66,6 +66,7 @@ if (isset($_GET['condnum'])) {$condnum=$_GET['condnum'];}
 			<button class="confirm w3-button w3-center w3-round-xlarge" name="submit" value="confirm">Confirm</button>
 		</div>
         <footer class="w3-container w3-blue">
+		<h4>(C) Martijn Willemsen and Martijn ter Meulen</h4>
         </footer>
 </div>
 
@@ -76,7 +77,7 @@ if (isset($_GET['condnum'])) {$condnum=$_GET['condnum'];}
             o=$("#condnum").val();
 			if (o<0) {o="random"};
 
-			generateTrial("json_files/gamble.json", "dynSet", o);
+			generateTrial("json_files/1box.json", "dynSet", o);
 
 
      		//function that starts the page
