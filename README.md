@@ -1,4 +1,4 @@
-# Mouse-Tracking Experiment Code for Prisoner's Dilemma Study
+# Mouse-Tracking Experiment Code for Behavioural Study in Prisoner's Dilemma
 
 This repository contains the code for a mouse-tracking experiment developed for a Master’s thesis, 'The Overt Behavioural Patterns in the Prisoner’s Dilemma under Social Pressure', in the MSc Neuroeconomics programme. The study investigates the effect of pressure on overt behavioural patterns during the Prisoner's Dilemma game, within the field of behavioural economics.
 
