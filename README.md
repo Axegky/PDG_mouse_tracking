@@ -4,7 +4,7 @@ This repository contains the code for a mouse-tracking experiment developed for 
 
 ## Project Overview
 
-The code builds upon **MouselabWEB**, a popular process-tracing tool designed to monitor how decision-makers acquire information in web-based experiments. MouselabWEB is open-source and widely used to study decision-making in various contexts such as finance, military, and consumer behaviour.
+The code builds upon **MouselabWEB**, a process-tracing tool designed to monitor how decision-makers acquire information in web-based experiments. MouselabWEB is open-source and widely used to study decision-making in various contexts such as consumer behaviour.
 
 - Official MouselabWEB site: [https://www.mouselabweb.org/index.html](https://www.mouselabweb.org/index.html)
 - Original MouselabWEB template used: [Martijn Willemsen’s GitHub](https://github.com/MCWillemsen/mouselabWEB20)
